@@ -7,12 +7,19 @@
 .page {
   min-inline-size: 360px;
   margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 :root{
   --bg-color: #F3EFEC;
   --text-color: #312A4E;
   --accent-color: #FFAB6B;
+  --main-font: Raleway;
+  --accent-font: STIX Two Text;
+}
+.header{
+  padding-top: 10%;
 }
 
 p,
@@ -25,4 +32,33 @@ ol,
 li,
 figure {
   margin: 0;
+}
+.heading{
+  font-family: var(--main-font) sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+.content-section{
+  padding: 5vi;
+}
+.header__title{
+  font-size: clamp(1rem, -0.8571rem + 9.2857vw, 7.5rem);
+  margin-bottom: 40px;
+}
+.content__title{
+  font-size: 30px;
+  margin: 7% 0 2.5% 0;
+}
+.content__text-block{
+  font-size: 18px;
+}
+.content__text-block .content__paragraph:not(:last-child){
+  margin-bottom: 1.5em;
+}
+a{
+  color: inherit;
+}
+.content__blockquote{
+  width: 75%;
+  margin-bottom: 1.5em;
 }
