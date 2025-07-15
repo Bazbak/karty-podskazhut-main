@@ -81,3 +81,48 @@ a{
   padding: 0 4px 0 4px;
   margin-right: 1px;
 }
+.content__figure{
+  margin-block: 7%;
+  position: relative;
+  right: 5vi;
+  width: calc(100% + 10vi);
+}
+.content__picture{
+  width: 100%;
+}
+.img_calc{
+  width: 100%;
+}
+.content__picture-caption{
+  border-bottom: 1px solid #312A4E;
+  text-align: center;
+  padding-block: 20px;
+}
+.content__card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid currentColor;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 4/3;
+  margin-top: 7%;
+}
+.content__card-title{
+  font-size: 60px;
+}
+.content__card-subtitle{
+  font-size: 18px;
+}
+.colored-text::after{
+  content: '';
+  position: absolute;
+  width: 105%;
+  height: 0.2em;
+  background-color: var(--accent-color);
+  z-index: -1;
+  left: -2.5%;
+  bottom: 0;
+}
+.colored-text{
+  position: relative;
+}

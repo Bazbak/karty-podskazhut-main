@@ -36,12 +36,14 @@
             колода. Она называется Oblique Strategies, или «Обходные стратегии». Первую колоду ещё в 1975 году создали
             композитор, музыкальный продюсер и один из основателей жанра эмбиент Брайан Ино и мультимедиа-художник Питер
             Шмидт.</p>
-        <figure>
-            <picture>
-                <img>
+        <figure class="content__figure">
+            <picture class="content__picture">
+                <source srcset="images/cards-1x.avif 1x, images/cards-2x.avif 2x" type="image/avif">
+                <source srcset="images/cards-1x.webp 1x, images/cards-2x.webp 2x" type="image/webp">
+                <img class="img_calc" src="images/cards-1x.png" srcset="images/cards-1x.png 1x, images/cards-2x.png 2x" loading="lazy">
             </picture>
-            <figcaption>
-
+            <figcaption class="content__picture-caption">
+                Колода Oblique Strategies
             </figcaption>
         </figure>
         <p class="content__paragraph">Oblique Strategies в основном используют музыканты, но колода подходит для
@@ -76,6 +78,10 @@
                     target="_blank">Android.</a>
         </p>
     </div>
+    <article class="content__card">
+        <h3 class="content__card-title heading">Use an <span class="colored-text">old idea</span></h3>
+        <p class="content__card-subtitle">Воспользуйтесь старой идеей</p>
+    </article>
     <h2 class="heading content__title">Кто пользовался Oblique Strategies</h2>
     <div class="content__text-block ">
         <ul>
