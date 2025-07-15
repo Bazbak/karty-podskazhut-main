@@ -62,3 +62,22 @@ a{
   width: 75%;
   margin-bottom: 1.5em;
 }
+.content__list{
+  list-style: none;
+}
+.content__list::before {
+  content: "";
+  background: url("/images/marker-light.svg") no-repeat center;
+  width: 15px;
+  height: 15px;
+  padding-right: 40px;
+}
+.content__list:not(:last-child){
+  margin-bottom: 10px;
+}
+.content__text-block_type_first-lettered .content__paragraph::first-letter{
+  display: inline-block;
+  background: var(--accent-color);
+  padding: 0 4px 0 4px;
+  margin-right: 1px;
+}
