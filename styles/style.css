@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 .page {
   min-inline-size: 360px;
   margin: 0;
@@ -53,10 +54,30 @@ figure {
   color: currentColor;
 }
 .header__theme-button{
-  border-bottom: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.header__theme-button_is-active{
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+.header__theme-button_is-active::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 0.7em;
+  bottom: 0;
+  background-color: #FFAB6B;
+  left: 0;
 }
 .header__theme-button:hover{
   border-bottom: 1px solid currentColor;
+}
+.header__theme-button:focus-visible{
+  border: 1px solid currentColor;
 }
 .header__title{
   font-size: clamp(1rem, -0.8571rem + 9.2857vw, 7.5rem);
@@ -141,4 +162,10 @@ a{
 }
 .colored-text{
   position: relative;
+}
+@font-face {
+  font-family: "RalewayRegular";
+  src: url("/fonts/Raleway-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
