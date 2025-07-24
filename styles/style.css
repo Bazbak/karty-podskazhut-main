@@ -130,20 +130,25 @@ a{
   color: inherit;
 }
 .content__blockquote{
-  width: 75%;
+  padding: 0 234px 0 234px;
+  font-style: italic;
+  width: 100%;
   margin-bottom: 1.5em;
 }
 .content__list{
   list-style: none;
 }
+.content__text-block ul{
+  position: relative;
+}
 .content__list::before {
   content: "";
   background: url("/images/marker-light.svg") no-repeat center;
   position: absolute;
-  left: -5px;
+  left: 15px;
+  top: 12px;
   width: 15px;
   height: 15px;
-  /*padding-right: 40px;*/
 }
 .content__list:not(:last-child){
   margin-bottom: 10px;
@@ -190,10 +195,11 @@ a{
   content: '';
   position: absolute;
   width: 105%;
-  height: 0.2em;
+  height: 0.4em;
   background-color: var(--accent-color);
   left: -2.5%;
   bottom: 0;
+  z-index: -1;
 }
 .theme_dark .colored-text::after{
   content: '';
@@ -206,6 +212,7 @@ a{
 }
 .colored-text{
   position: relative;
+  white-space: nowrap;
 }
 @font-face {
   font-family: "RalewayRegular";
